@@ -23,5 +23,13 @@ git checkout master
 git merge <nazwa brancha>
 usuwamy brancha
 git branch -d test_1
-7. Usuwanie plików które nigdy wcześniej nie zostały dodne do repo (tego działania nie da się cofnąć)
-git clean
+7. (To mi nie dziła :/ ) Usuwanie plików które nigdy wcześniej nie zostały dodne do repo (tego działania nie da się cofnąć)
+git clean -n/-nd/-idf
+-n usuwa plik/-nd usuwa plik z folderem/-idf interkatywne włączenie usuwania plików i folderów
+8. Usuwanie pliku które znajduje się w repo (można cofnąć to działanie)
+9. Co zrobić aby cofnąć ruch git add <file>
+- po wykonaniu git add <file> mamy pliki gotowe do commitowania ze statusem 'Changes to be committed <nazwy plików>'
+- git reset
+po wykonaniu tego ruchu pliki nieistniejące w repo mają status 'Untracked files' a będące w repo 'Changes not staged for commit'
+9. Cofnięcie wykonanych zmian w kodzie który nie został zakommitowany
+git restore <file>
