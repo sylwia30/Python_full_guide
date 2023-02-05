@@ -23,5 +23,5 @@ git checkout master
 git merge <nazwa brancha>
 usuwamy brancha
 git branch -d test_1
-7. Usuwanie plików które nigdy wcześniej nie zostały dodne do repo
+7. Usuwanie plików które nigdy wcześniej nie zostały dodne do repo (tego działania nie da się cofnąć)
 git clean
