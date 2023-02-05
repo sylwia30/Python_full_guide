@@ -43,3 +43,7 @@ lub
 git log --oneline
 - możemy przejść na którąś zmiane i przeglądać kod za pomocą 
 git checkout <nr commita: 0ff6e4c>
+- jeśli jednak chcemy wprowadzić zmiany w przeglądanym kodzie musimy stworzyć brancha
+git switch -c <new-branch-name>
+- jeśli chcę wrócić do bieżącego stanu kodu:
+git checkout master
