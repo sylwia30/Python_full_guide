@@ -27,9 +27,19 @@ git branch -d test_1
 git clean -n/-nd/-idf
 -n usuwa plik/-nd usuwa plik z folderem/-idf interkatywne włączenie usuwania plików i folderów
 8. Usuwanie pliku które znajduje się w repo (można cofnąć to działanie)
+usunięcie (bez git push):
+git rm test22.py
+cośnięcie usunięcia
+git restore <file>
 9. Co zrobić aby cofnąć ruch git add <file>
 - po wykonaniu git add <file> mamy pliki gotowe do commitowania ze statusem 'Changes to be committed <nazwy plików>'
 - git reset
 po wykonaniu tego ruchu pliki nieistniejące w repo mają status 'Untracked files' a będące w repo 'Changes not staged for commit'
 9. Cofnięcie wykonanych zmian w kodzie który nie został zakommitowany
 git restore <file>
+10. Przeglądanie historii kodu - commitów 
+git log 
+lub 
+git log --oneline
+- możemy przejść na którąś zmiane i przeglądać kod za pomocą 
+git checkout <nr commita: 0ff6e4c>
